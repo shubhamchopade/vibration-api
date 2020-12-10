@@ -1,9 +1,7 @@
-const btn = document.querySelector(".vibration__button");
 const btnStop = document.getElementById("stop");
 const btnFast = document.getElementById("fast");
 const btnSlow = document.getElementById("slow");
 
-btn.addEventListener("click", vibrateOnce);
 btnStop.addEventListener("click", vibrateStop);
 btnFast.addEventListener("click", vibrateFast);
 btnSlow.addEventListener("click", vibrateSlow);
