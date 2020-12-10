@@ -1,23 +1,13 @@
 const btn = document.querySelector(".vibration__button");
+const btnStop = document.getElementById("#stop");
 
 btn.addEventListener("click", vibrateOnce);
+btnStop.addEventListener("click", vibrateStop);
+
+function vibrateStop() {
+  navigator.vibrate(0);
+}
 
 function vibrateOnce() {
-  navigator.vibrate([
-    500,
-    100,
-    500,
-    200,
-    500,
-    300,
-    500,
-    400,
-    500,
-    800,
-    500,
-    900,
-    500,
-    100,
-    500,
-  ]);
+  navigator.vibrate([100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100]);
 }
