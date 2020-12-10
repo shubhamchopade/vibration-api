@@ -1,16 +1,116 @@
 const btnStop = document.getElementById("stop");
 const btnFast = document.getElementById("fast");
 const btnSlow = document.getElementById("slow");
+const btnLong = document.getElementById("long");
 
 btnStop.addEventListener("click", vibrateStop);
 btnFast.addEventListener("click", vibrateFast);
 btnSlow.addEventListener("click", vibrateSlow);
+btnLong.addEventListener("click", vibrateLong);
 
 function vibrateStop() {
   navigator.vibrate(0);
 }
 
+longArr = [10000, 100];
+
 fastArr = [
+  1000,
+  100,
+  1000,
+  100,
+  1000,
+  100,
+  1000,
+  100,
+  1000,
+  100,
+  1000,
+  100,
+  100,
+  100,
+  100,
+  100,
+  100,
+  100,
+  100,
+  100,
+  1000,
+  100,
+  1000,
+  100,
+  1000,
+  100,
+  1000,
+  100,
+  1000,
+  100,
+  1000,
+  100,
+  1000,
+  100,
+  1000,
+  100,
+  1000,
+  100,
+  1000,
+  100,
+  1000,
+  100,
+  1000,
+  100,
+  1000,
+  100,
+  1000,
+  100,
+  100,
+  100,
+  100,
+  100,
+  100,
+  100,
+  100,
+  100,
+  1000,
+  100,
+  1000,
+  100,
+  1000,
+  100,
+  1000,
+  100,
+  1000,
+  100,
+  1000,
+  100,
+  1000,
+  100,
+  1000,
+  100,
+  100,
+  100,
+  100,
+  100,
+  100,
+  100,
+  100,
+  100,
+  1000,
+  100,
+  1000,
+  100,
+  1000,
+  100,
+  1000,
+  100,
+  1000,
+  100,
+  1000,
+  100,
+  1000,
+  100,
+  1000,
+  100,
   1000,
   100,
   1000,
@@ -82,4 +182,7 @@ function vibrateSlow() {
 }
 function vibrateFast() {
   navigator.vibrate(fastArr);
+}
+function vibrateLong() {
+  navigator.vibrate(longArr);
 }
