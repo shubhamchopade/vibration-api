@@ -1,6 +1,7 @@
 *,
 html {
   margin: 0;
+  background-color: rgb(26, 26, 33);
 }
 
 div {
@@ -15,6 +16,7 @@ div {
 .vibration__button {
   padding: 1rem 2rem;
   cursor: pointer;
+  background-color: aliceblue;
 }
 .vibration__button:hover {
   transform: scale(1.2);
