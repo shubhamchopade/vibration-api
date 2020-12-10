@@ -2,3 +2,25 @@
 html {
   margin: 0;
 }
+
+div {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.vibration__button {
+  padding: 1rem 2rem;
+  cursor: pointer;
+}
+.vibration__button:hover {
+  transform: scale(1.2);
+  transition: all ease 200ms;
+}
+
+.button_stop {
+  background-color: palevioletred;
+}
